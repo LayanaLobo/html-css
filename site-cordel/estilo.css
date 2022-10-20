@@ -1,0 +1,102 @@
+@charset "UTF-8";
+
+
+@import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700;900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+:root {
+    --fonte-destaque:'Passion One', cursive;
+    --fonte-conteudo:'Sriracha', cursive;
+    --fonte-creditos: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+html, body {
+    min-height: 100vh;
+    background-color: darkgray;
+}
+
+header {
+    background-color: black;
+    color: white;
+    padding-top: 50px;
+}
+
+header > h1 {
+    text-align: center;
+    font-family: var(--fonte-destaque);
+    font-size: 10vw; 
+    font-variant: small-caps;
+}
+
+header > p {
+    text-align: center;
+    font-family: var(--fonte-creditos);
+    padding-bottom: 50px;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+p.paragrafo {
+    font-family: var(--fonte-conteudo);
+    padding-left: 20px;
+    padding-bottom: 2em;;
+}
+
+section {
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    padding-left: 30px;
+    font-size: 3.5vw;
+}
+
+section.normal {
+    background-color: white;
+}
+
+section#foto1 {
+    background-image: url(imagens/background001.jpg);
+    background-position: right center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-shadow: inset 6px 6px 13px rgba(0, 0, 0, 0.5);
+    background-attachment: fixed;
+}
+
+section#foto2 {
+    background-image: url(imagens/background002.jpg);
+    background-position: right center;
+    background-repeat: no-repeat;
+    background-size: cover;  
+    box-shadow: inset 6px 6px 13px rgba(0, 0, 0, 0.5); 
+    background-attachment: fixed;
+}
+
+p.destaque {
+    padding:5px;
+    display: inline-block;
+    background-color: rgba(0, 0, 0, 0.377);
+    color: white;
+    font-family: var(--fonte-conteudo);
+    text-shadow: 1px 1px 0px black;
+
+}
+
+footer {
+    background-color: black;
+    color: white;
+    font-family: var(--fonte-creditos);
+    text-align: center;
+    padding: 10px;
+}
